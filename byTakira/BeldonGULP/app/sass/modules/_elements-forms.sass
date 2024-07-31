@@ -1,0 +1,110 @@
+.form-container
+  position: relative
+  padding-top: 1.4rem
+
+.form
+  //opacity: 0
+  opacity: 1
+  transition: opacity .5s ease-in-out
+  &.is-hidden
+    opacity: 0
+
+form
+  position: relative
+  width: 100%
+  input, textarea
+    position: relative
+    display: block
+    width: 100%
+    border: none
+    outline: none
+    margin: 0
+    padding: 0
+    background-color: transparent
+    padding: 1.6rem 0.2rem
+    font: normal 300 1.6rem/1.7 $default-font
+    border-bottom: 1px solid rgba($black, .4)
+    color: $txt-dark
+    &:focus
+      border-bottom: 1px solid $accent-color
+  input
+    height: 5rem
+    margin-bottom: 2.4rem
+    &.margin-s
+      margin-bottom: .5rem
+  textarea
+    height: 14rem
+    margin-bottom: .5rem
+  .inputs-description
+    display: block
+    width: 100%
+    margin-bottom: 1.6rem
+    text-align: right
+    font: normal 400 1.3rem/1.2 $default-font
+    color: $mute-gray
+  ::-webkit-input-placeholder
+    color: tint($mute-gray, 30%)
+  :-moz-placeholder
+    color: tint($mute-gray, 30%)
+  ::-moz-placeholder
+    color: tint($mute-gray, 30%)
+  :-ms-input-placeholder
+    color: tint($mute-gray, 30%)
+  input:focus:required:invalid,
+  textarea:focus:required:invalid
+    color: $txt-dark
+  input:required:valid,
+  textarea:required:valid
+    color: $txt-dark
+
+.reply-group
+  position: absolute
+  +center
+  width: 100%
+  max-width: 300px
+  padding: 0 15px
+  text-align: center
+  opacity: 0
+  transition: opacity .5s ease-in-out
+  &.is-visible
+    opacity: 1
+
+.notify
+  .reply-group
+    left: 0
+    top: 2rem
+    bottom: auto
+    right: auto
+    transform: translateX(0) translateY(0)
+    max-width: 44rem
+    padding: 0
+    text-align: left
+
+.reply-group__icon
+  text-align: center
+  font-size: 4rem
+  color: $accent-color
+  margin-bottom: 1.2rem
+
+.reply-group__svg
+  display: inline-block
+  width: 4rem
+  height: 4rem
+  fill: $accent-color
+  margin-bottom: 1.2rem
+
+.reply-group__title
+  font: normal 400 2.5rem/1 $title-font
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  color: $black
+  margin-bottom: 0.6rem
+
+p
+  &.reply-group__title
+    color: $black
+
+.reply-group__text
+  display: block
+  font: normal 400 1.6rem/1.6 $default-font
+  color: $medium-gray

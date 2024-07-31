@@ -1,0 +1,340 @@
+/*! ------------------------------------------------
+   Project Name: Beldon - Coming Soon and Landing Page Template
+   Project Description: Beldon - awesome coming soon template to kick-start your project
+   Tags: mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page
+   Version: 1.0.2
+   Build Date: November 2021
+   Last Update: December 2022
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: https://themeforest.net/user/mix_design
+   File name: main.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Template Backgrounds
+    2. Fonts
+    3. Base CSS Styles
+    4. Cursor
+    5. Transitions
+    6. Typography
+    7. Buttons & Triggers
+    8. Forms and Forms Reply Groups
+    9. Animated Backgrounds
+    10. Header
+    11. Main Section
+    12. Menu
+    13. Notify
+    14. Content Sections
+    15. Video Block
+    16. Skillbars
+    17. Team
+    18. Contact Data
+    19. Swiper Slider Custom
+    20. Google Map
+    21. Gallery Custom Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+// Import Libs, Mixins and Variables
+@import "partials/layout"
+@import "partials/mixins"
+@import "partials/variables"
+
+/* ------------------------------------------------*/
+/* Template Backgrounds Start
+/* ------------------------------------------------*/
+// SVG backgrounds (gradient spots)
+.color-layer-svg-main
+  background-image: url("../img/backgrounds/bg-main.svg")
+.color-layer-svg-menu
+  background-image: url("../img/backgrounds/bg-menu.svg")
+.svg-background-1,
+.svg-background-2,
+.svg-background-3
+  background-color: #f7f7f7
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: cover
+.svg-background-1
+  background-image: url("../img/backgrounds/bg-about.svg")
+.svg-background-2
+  background-position: right bottom
+  background-image: url("../img/backgrounds/bg-about-half.svg")
+.svg-background-3
+  background-position: right top, left bottom
+  background-image: url("../img/backgrounds/bg-contact.svg"), url("../img/backgrounds/bg-contact-2.svg")
+@media (orientation: landscape)
+  .svg-background-1
+    background-image: url('../img/backgrounds/bg-about.svg')
+  .svg-background-3
+    background-image: url("../img/backgrounds/bg-contact.svg"), url("../img/backgrounds/bg-contact-2.svg")
+@media (orientation: portrait)
+  .svg-background-1
+    background-image: url('../img/backgrounds/bg-about-portrait.svg')
+  .svg-background-3
+    background-position: right top
+    background-image: url("../img/backgrounds/bg-contact-portrait.svg")
+
+// Main screen backgrounds
+.media-bg-1
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.media-bg-2
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.media-bg-3
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.media-bg-4
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+
+// Main screen slider
+.swiper-image-1
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-image-2
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-image-3
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-image-4
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-image-5
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-slide-1
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-slide-2
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-slide-3
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-slide-4
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+.swiper-slide-5
+  background-image: url('https://dummyimage.com/1000x1500/6b388f/b168e6')
+
+// Works section slider
+.works-slide-1
+  background-image: url('https://dummyimage.com/1920x1080/6b388f/b168e6')
+.works-slide-2
+  background-image: url('https://dummyimage.com/1920x1080/6b388f/b168e6')
+.works-slide-3
+  background-image: url('https://dummyimage.com/1920x1080/6b388f/b168e6')
+
+// Content sections intro backgrounds
+.about-intro
+  background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+.works-intro
+  background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+.contact-intro
+  background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+@media (orientation: landscape)
+  .about-intro
+    background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+  .works-intro
+    background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+  .contact-intro
+    background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+@media (orientation: portrait)
+  .about-intro
+    background-image: url('https://dummyimage.com/1080x1920/4c2766/562e73')
+  .works-intro
+    background-image: url('https://dummyimage.com/1080x1920/4c2766/562e73')
+  .contact-intro
+    background-image: url('https://dummyimage.com/1080x1920/4c2766/562e73')
+
+// Work item hover background
+.my-gallery__descr
+  &::after
+    background-image: url("../img/backgrounds/bg-gallery-item.svg")
+
+// Blocks
+.image-block-1
+  background-image: url("https://dummyimage.com/1200x800/6b388f/b168e6")
+.image-block-2
+  background-image: url("https://dummyimage.com/1200x800/6b388f/b168e6")
+.image-block-3
+  background-image: url("https://dummyimage.com/1200x800/6b388f/b168e6")
+.image-block-4
+  background-image: url("https://dummyimage.com/1200x800/6b388f/b168e6")
+
+// Inner section video background
+.inner-video
+  background-image: url('https://dummyimage.com/1920x1080/4c2766/562e73')
+/* ------------------------------------------------*/
+/* Template Backgrounds End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Fonts Start
+/* ------------------------------------------------*/
+// FogtwoNo5 Font
++font-face("FogtwoNo5", "../fonts/FogtwoNo5/FogtwoNo5", 400, normal, $file-formats: eot woff woff2 ttf svg)
+// Lato Font
++font-face("Lato", "../fonts/Lato-Light/Lato-Light", 300, normal, $file-formats: eot woff woff2 ttf svg)
++font-face("Lato", "../fonts/Lato-Regular/Lato-Regular", 400, normal, $file-formats: eot woff woff2 ttf svg)
++font-face("Lato", "../fonts/Lato-Bold/Lato-Bold", 700, normal, $file-formats: eot woff woff2 ttf svg)
+/* ------------------------------------------------*/
+/* Fonts End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Base CSS Styles Start
+/* ------------------------------------------------*/
+@import "modules/base"
+/* ------------------------------------------------*/
+/* Base CSS Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Cursor Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-cursor"
+/* ------------------------------------------------*/
+/* Cursor Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Transitions Start
+/* ------------------------------------------------*/
+@import "modules/transitions"
+/* ------------------------------------------------*/
+/* Transitions End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Typography Start
+/* ------------------------------------------------*/
+@import "modules/elements-typography"
+/* ------------------------------------------------*/
+/* Typography End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Buttons & Triggers Start
+/* ------------------------------------------------*/
+@import "modules/elements-buttons"
+/* ------------------------------------------------*/
+/* Buttons & Triggers End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Forms and Forms Reply Groups Start
+/* ------------------------------------------------*/
+@import "modules/elements-forms"
+/* ------------------------------------------------*/
+/* Forms and Forms Reply Groups End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Animated Backgrounds Start
+/* ------------------------------------------------*/
+@import "modules/animated-backgrounds"
+/* ------------------------------------------------*/
+/* Animated Backgrounds End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Header Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-header"
+/* ------------------------------------------------*/
+/* Header Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Main Section Styles Start
+/* ------------------------------------------------*/
+@import "modules/section-main"
+/* ------------------------------------------------*/
+/* Main Section Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Countdown Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-countdown"
+/* ------------------------------------------------*/
+/* Countdown Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Menu Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-menu"
+/* ------------------------------------------------*/
+/* Menu Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Notify Start
+/* ------------------------------------------------*/
+@import "modules/block-notify"
+/* ------------------------------------------------*/
+/* Notify End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Content Section Styles Start
+/* ------------------------------------------------*/
+@import "modules/section-inner"
+/* ------------------------------------------------*/
+/* Content Section Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Video Block Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-innermedia"
+/* ------------------------------------------------*/
+/* Video Block Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Skillbars Start
+/* ------------------------------------------------*/
+@import "modules/block-skillbars"
+/* ------------------------------------------------*/
+/* Skillbars End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Team Start
+/* ------------------------------------------------*/
+@import "modules/block-team"
+/* ------------------------------------------------*/
+/* Team End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Contact Data Start
+/* ------------------------------------------------*/
+@import "modules/block-contactdata"
+/* ------------------------------------------------*/
+/* Contact Data End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Swiper Slider Custom Start
+/* ------------------------------------------------*/
+@import "modules/block-swiper"
+/* ------------------------------------------------*/
+/* Swiper Slider Custom End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Google Map Start
+/* ------------------------------------------------*/
+@import "modules/block-googlemap"
+/* ------------------------------------------------*/
+/* Google Map End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Gallery Custom Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-gallery"
+/* ------------------------------------------------*/
+/* Gallery Custom Styles End
+/* ------------------------------------------------*/

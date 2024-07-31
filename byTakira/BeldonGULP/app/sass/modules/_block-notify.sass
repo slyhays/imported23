@@ -1,0 +1,103 @@
+.notify
+  +position(fixed, 0 null null 0)
+  width: 100%
+  height: 100%
+  overflow-y: auto
+  padding-top: 70px
+  background-color: $gray-light-bg
+  overflow-y: auto
+  z-index: 13
+  opacity: 0
+  visibility: hidden
+  transition: all 0.6s ease-in-out
+  .form-container
+    max-width: 440px
+  +MQ(XL)
+    +position(absolute, 0 null null 0)
+    padding-top: 0
+    z-index: 10
+    background-color: rgba($gray-light-bg, 0.5)
+
+.popup-controls
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 70px
+  padding: 2.3rem 10%
+  +MQ(XL)
+    top: 80px
+    height: 80px
+    padding: 2.8rem 6rem
+  +MQ(XXL)
+    top: 100px
+    height: 100px
+    padding: 3.8rem 8rem
+
+.popup-content
+  position: relative
+  padding: 7rem 10%
+  +MQ(XL)
+    position: absolute
+    left: 0
+    +center(y)
+    width: 100%
+    padding: 0 6rem
+  +MQ(XXL)
+    padding: 0 8rem
+
+.popup-title
+  position: relative
+  max-width: 440px
+  padding-top: 0
+  margin-bottom: 2.6rem
+  +MQ(XL)
+    padding-top: 8rem
+
+.popup-title__subtitle
+  display: block
+  font: normal 400 1.4rem/1.2 $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  margin-bottom: 2.3rem
+  padding-left: 2px
+  color: $mute-gray
+
+.popup-title__title
+  font: normal 400 4rem/1 $title-font
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  color: $black
+
+.popup-title__text
+  font: normal 400 1.6rem/1.6 $default-font
+  margin-top: 1.7rem
+  padding-left: 2px
+  color: $medium-gray
+  max-width: 440px
+
+.notify-close
+  display: block
+  position: relative
+  height: 2.4rem
+  width: 2.4rem
+  transform: scale(0)
+  transition: transform 0.3s ease-in-out
+  z-index: 1
+  &::before,
+  &::after
+    content: ""
+    display: block
+    +position(absolute, 1.1rem null null -0.3rem)
+    width: 3rem
+    height: 0.1rem
+    background-color: $black
+    transition: background-color 0.3s
+  &::before
+    transform: rotate(45deg)
+  &::after
+    transform: rotate(-45deg)
+  .no-touch &:hover
+    &::before,
+    &::after
+      background-color: $mute-gray
+  &.is-scaled-up
+    transform: scale(1)

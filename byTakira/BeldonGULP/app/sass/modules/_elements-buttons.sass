@@ -1,0 +1,252 @@
+.menu-trigger
+  display: block
+  position: relative
+  width: 100px
+  height: 24px
+  padding-right: 40px
+  text-align: right
+  font: normal 400 1.4rem/1.2 $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  text-decoration: none
+  color: $dark-gray
+  transition: color .3s ease-in-out
+  svg
+    transition: fill .3s ease-in-out
+  &.light-desktop
+    color: $dark-gray
+    svg
+      fill: $black
+  &.dark-desktop
+    color: $dark-gray
+    svg
+      fill: $black
+  .no-touch &:hover
+    .menu-trigger__caption
+      .menu-trigger__hover
+        opacity: 1
+        transform: translateX(0)
+  &.menu-opened
+    .menu-trigger__icon
+      transform: rotate(45deg)
+    .menu-trigger__caption
+      .menu-trigger__close
+        opacity: 1
+        transform: translateX(0)
+        transition: transform .3s .9s, opacity .3s .9s ease-in-out
+    .no-touch &:hover
+      .menu-trigger__caption
+        .menu-trigger__hover
+          opacity: 0
+          transform: translateX(101%)
+  +MQ(XL)
+    &.light-desktop
+      color: $white
+      svg
+        fill: $white
+    &.dark-desktop
+      color: $dark-gray
+      svg
+        fill: $black
+
+.menu-trigger__icon
+  display: block
+  +position(absolute, 0 0 null null)
+  width: 24px
+  height: 24px
+  transform: rotate(0)
+  transition: transform .3s ease-in-out
+
+.menu-trigger__caption
+  display: block
+  position: relative
+  overflow: hidden
+  width: 100%
+  height: 24px
+  em
+    display: block
+    +position(absolute, 0 0 null null)
+    line-height: 24px
+    opacity: 0
+    transform: translateX(101%)
+    transition: transform .3s, opacity .3s ease-in-out
+
+.round-button
+  display: inline-block
+  position: relative
+  height: 50px
+  line-height: 50px
+  padding-right: 70px
+  padding-left: 3px
+  .no-touch &:hover
+    .button__icon
+      color: $txt-light
+      svg
+        fill: $white
+      &::after
+        transform: translateX(-50%) translateY(-50%) scale(1)
+    .button__caption
+      color: $black
+
+.button__caption
+  font: normal 700 1.4rem/50px $default-font
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  color: $black
+  transition: color 0.3s ease-in-out
+
+.button__icon
+  display: block
+  +position(absolute, 0 0 null null)
+  width: 50px
+  height: 50px
+  line-height: 50px
+  border-radius: 50%
+  border: 1px solid $accent-color-mute
+  text-align: center
+  color: $accent-color-mute
+  transition: color 0.3s ease-in-out
+  z-index: 1
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    bottom: auto
+    right: auto
+    transform: translateX(-50%) translateY(-50%) scale(0)
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    background-color: $accent-color
+    z-index: -1
+    transition: all .3s ease-in-out
+  svg
+    display: block
+    position: absolute
+    +center
+    width: 18px
+    height: 18px
+    fill: $accent-color-mute
+    transition: fill 0.3s ease-in-out
+  .material-icons
+    line-height: 50px
+    font-size: 1.8rem
+
+.intro__scroll
+  display: block
+  position: absolute
+  bottom: 0
+  +center(x)
+  width: 24px
+  height: 70px
+  overflow: hidden
+  &::after
+    content: ''
+    display: block
+    +position(absolute, 0 null null 12px)
+    width: 1px
+    height: 100%
+    background-color: $white
+    animation: scrollBtn 1s ease-in-out 0s infinite
+
+@keyframes scrollBtn
+  0%
+    opacity: 1
+    transform: translateY(-100%)
+  68%
+    opacity: 1
+    transform: translateY(100%)
+  69%
+    opacity: 0
+    transform: translateY(100%)
+  100%
+    opacity: 0
+    transform: translateY(-100%)
+
+.inner-video-trigger
+  display: block
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  background-color: transparent
+  border: 1px solid $white
+  font: normal 400 2.2rem/100px $title-font
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  text-align: center
+  color: $white
+  overflow: hidden
+  z-index: 1
+  transition: all .3s ease-in-out
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    bottom: auto
+    right: auto
+    transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(0)
+    height: 100px
+    width: 100px
+    border-radius: 100px
+    background-color: $white
+    z-index: -1
+    transition: all .3s ease-in-out
+  .no-touch &:hover
+    color: $black
+    &::after
+      transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(1)
+
+.btn
+  position: relative
+  display: inline-block
+  border: none
+  outline: 0
+  padding: 0
+  font: normal 400 1.4rem/1.2 $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  text-decoration: none
+  color: $txt-dark
+  text-decoration: none
+  user-select: none
+  cursor: pointer
+
+.btn-solid
+  background-color: $accent-color
+  height: 50px
+  line-height: 50px
+  width: auto
+  min-width: 140px
+  padding: 0 4.6rem
+  text-align: center
+  font: normal 400 1.4rem/50px $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  color: $white
+  overflow: hidden
+  border: 1px solid $accent-color
+  transition: all .5s ease-in-out
+  z-index: 1
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    bottom: auto
+    right: auto
+    transform: translateX(-50%) translateY(-50%) scale(0)
+    height: 400%
+    width: 150%
+    border-radius: 50%
+    background-color: $white
+    z-index: -1
+    transition: all .5s ease-in-out
+  .no-touch &:hover
+    color: $txt-dark
+    &::after
+      transform: translateX(-50%) translateY(-50%) scale(1)

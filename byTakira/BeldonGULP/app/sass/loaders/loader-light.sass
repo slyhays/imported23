@@ -1,0 +1,76 @@
+/*! ------------------------------------------------
+   Project Name: Beldon - Coming Soon and Landing Page Template
+   Project Description: Beldon - awesome coming soon template to kick-start your project
+   Tags: mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page
+   Version: 1.0.2
+   Build Date: November 2021
+   Last Update: December 2022
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: https://themeforest.net/user/mix_design
+   File name: loader-light.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Loader Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+// Import Libs, Mixins and Variables
+@import "../partials/layout"
+@import "../partials/mixins"
+@import "../partials/variables"
+
+/* ------------------------------------------------*/
+/* Loader Styles Start
+/* ------------------------------------------------*/
+.loader
+  +position(fixed, 0 0 0 0)
+  z-index: 9999
+  background-color: $base-color
+  opacity: 1
+  visibility: visible
+  transition: all .5s ease-in-out
+  &.loaded
+    opacity: 0
+    visibility: hidden
+
+.loader-content
+  position: absolute
+  +center
+
+.loader-logo
+  width: 200px
+  img
+    display: block
+    width: 100%
+    height: auto
+
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+.fadeOut
+  animation: fadeOut .5s 1
+  animation-fill-mode: both
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.fadeIn
+  animation: fadeIn .5s 1
+  animation-fill-mode: both
+/* ------------------------------------------------*/
+/* Loader Styles End
+/* ------------------------------------------------*/

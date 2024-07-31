@@ -1,0 +1,726 @@
+/*! ------------------------------------------------
+   Project Name: Beldon - Coming Soon and Landing Page Template
+   Project Description: Beldon - awesome coming soon template to kick-start your project
+   Tags: mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page
+   Version: 1.0.2
+   Build Date: November 2021
+   Last Update: December 2022
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: https://themeforest.net/user/mix_design
+   File name: main-demo.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Loader Styles
+    2. Fonts
+    3. Base CSS Styles
+    4. Cursor
+    5. Typography Styles
+    6. Buttons & Triggers Styles
+    7. Intro Styles
+    8. Preview Sections Styles
+    9. Headline Styles
+    10. Preview Links Styles
+    11. Subscribe Section Styles
+    12. Footer Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+// Import Libs, Mixins and Variables
+@import "partials/layout"
+@import "partials/mixins"
+@import "partials/variables"
+
+/* ------------------------------------------------*/
+/* Loader Styles Start
+/* ------------------------------------------------*/
+@import "loaders/loader-light"
+/* ------------------------------------------------*/
+/* Loader Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Fonts Start
+/* ------------------------------------------------*/
+// FogtwoNo5 Font
++font-face("FogtwoNo5", "../fonts/FogtwoNo5/FogtwoNo5", 400, normal, $file-formats: eot woff woff2 ttf svg)
+// Lato Font
++font-face("Lato", "../fonts/Lato-Light/Lato-Light", 300, normal, $file-formats: eot woff woff2 ttf svg)
++font-face("Lato", "../fonts/Lato-Regular/Lato-Regular", 400, normal, $file-formats: eot woff woff2 ttf svg)
++font-face("Lato", "../fonts/Lato-Bold/Lato-Bold", 700, normal, $file-formats: eot woff woff2 ttf svg)
+/* ------------------------------------------------*/
+/* Fonts End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Base CSS Styles Start
+/* ------------------------------------------------*/
+*, *::before, *::after
+  box-sizing: border-box
+
+button:active, button:focus
+  outline: none !important
+
+button::-moz-focus-inner
+  border: 0 !important
+
+input::-moz-focus-inner
+  border: 0 !important
+
+::selection
+  background-color: rgba($accent-color, 0.7)
+  color: $white
+  text-shadow: none
+
+::-webkit-scrollbar
+  display: none
+  width: 5px
+  background: tint($accent-color, 60%)
+  +MQ(M)
+    display: block
+
+::-webkit-scrollbar-track
+  border-radius: 20px
+  background-color: tint($accent-color, 60%)
+
+::-webkit-scrollbar-thumb
+  background-color: $accent-color
+  border-radius: 10px
+
+html
+  font-family: sans-serif
+  font-size: 62.5%
+  +font-smoothing
+
+html,
+body
+  width: 100%
+  height: 100%
+
+body
+  position: relative
+  min-width: 320px
+  overflow-x: hidden !important
+  background-color: shade($base-color, 5%)
+  font: normal 400 1.6rem/1.6 $default-font
+
+section
+  position: relative
+  min-width: 320px
+
+a
+  text-decoration: none
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  outline: 0
+
+img
+  display: block
+  width: 100%
+  height: auto
+
+.overflow-hidden
+  overflow: hidden !important
+
+.fullheight
+  position: static
+  height: auto
+  +MQ(XL)
+    position: relative
+    height: 100%
+
+.fullheight-mobile
+  position: relative
+  height: 100%
+
+.color-layer
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.color-layer-black
+  background-color: rgba(#0c0c28, .6)
+  mix-blend-mode: multiply
+
+.color-layer-gradient-bottom
+  background: linear-gradient(to bottom, rgba($accent-color,0.1) 0%,rgba($accent-color,0.5) 100%)
+  mix-blend-mode: multiply
+
+.color-layer-gradient
+  background: linear-gradient(135deg, rgba(86,55,137,0.6) 0%,rgba(152,25,154,0.6) 35%,rgba(15,15,84,0.6) 100%)
+  mix-blend-mode: multiply
+/* ------------------------------------------------*/
+/* Base CSS Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Cursor Styles Start
+/* ------------------------------------------------*/
+@import "modules/block-cursor"
+/* ------------------------------------------------*/
+/* Cursor Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Typography Styles Start
+/* ------------------------------------------------*/
+.headline__title
+  font: normal 400 4rem/1 $title-font
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  color: $black
+  text-align: center
+  margin: 0 auto
+  max-width: 800px
+  +MQ(M)
+    font-size: 6rem
+  +MQ(XXL)
+    font-size: 7rem
+
+.headline__subtitle
+  display: block
+  font: normal 400 1.4rem/1.2 $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  margin: 0 auto
+  margin-bottom: 2.2rem
+  padding-left: 2px
+  padding-top: 2rem
+  color: $mute-gray
+  text-align: center
+  +MQ(M)
+    margin-bottom: 2.4rem
+
+.headline__descr
+  font: normal 400 1.6rem/1.6 $default-font
+  margin: 0 auto
+  margin-top: 1.5rem
+  padding-left: 2px
+  color: $medium-gray
+  max-width: 440px
+  text-align: center
+
+figure
+  text-align: center
+  figcaption
+    p
+      display: block
+      font: normal 400 1.2rem/1.2 $default-font
+      text-transform: uppercase
+      letter-spacing: 0.16rem
+      color: $mute-gray
+      margin-top: 1.2rem
+      +MQ(XXL)
+        margin-top: 2rem
+
+.footer
+  p
+    font: normal 400 1.2rem/1.2 $default-font
+    text-transform: uppercase
+    letter-spacing: 0.1rem
+    color: $txt-light-medium
+    a
+      color: $txt-light
+    i
+      color: $accent-color
+  +MQ(XXL)
+    p
+      font-size: 1.4rem
+/* ------------------------------------------------*/
+/* Typography Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Buttons & Triggers Styles Start
+/* ------------------------------------------------*/
+.btn
+  position: relative
+  display: block
+  border: none
+  outline: 0
+  padding: 0
+  font: normal 400 1.4rem/1.2 $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  text-decoration: none
+  color: $txt-dark
+  text-decoration: none
+  user-select: none
+  cursor: pointer
+  +MQ(M)
+    display: inline-block
+
+.btn-solid
+  background-color: $accent-color
+  height: 46px
+  line-height: 46px
+  width: auto
+  min-width: 140px
+  padding: 0 3.6rem
+  text-align: center
+  font: normal 400 1.2rem/46px $default-font
+  text-transform: uppercase
+  letter-spacing: 0.2rem
+  color: $white
+  overflow: hidden
+  border: 1px solid $accent-color
+  transition: all .5s ease-in-out
+  z-index: 1
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    bottom: auto
+    right: auto
+    transform: translateX(-50%) translateY(-50%) scale(0)
+    height: 400%
+    width: 150%
+    border-radius: 50%
+    background-color: $white
+    z-index: -1
+    transition: all .5s ease-in-out
+  .no-touch &:hover
+    color: $txt-dark
+    &::after
+      transform: translateX(-50%) translateY(-50%) scale(1)
+
+.btn-solid-light
+  background-color: $accent-color
+  color: $white
+  border: 1px solid $accent-color
+  &::after
+    background-color: shade($base-color, 5%)
+  .no-touch &:hover
+    color: $black
+
+.btn-solid-dark
+  background-color: $accent-color
+  color: $white
+  border: 1px solid $accent-color
+  &::after
+    background-color: rgba($base-color-dark, 0.3)
+  .no-touch &:hover
+    color: $txt-light
+
+.to-top
+  display: inline-block
+  +position(fixed, null 20px 20px null)
+  height: 44px
+  width: 44px
+  border-radius: 50%
+  border: 1px solid $accent-color
+  background-color: $accent-color
+  color: $white
+  overflow: hidden
+  z-index: 3
+  visibility: hidden
+  opacity: 0
+  transition: opacity 0.3s 0s, visibility 0s 0.3s
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    bottom: auto
+    right: auto
+    transform: translateX(-50%) translateY(-50%) scale(0)
+    height: 44px
+    width: 44px
+    border-radius: 50%
+    background-color: $white
+    z-index: -1
+    transition: all .3s ease-in-out
+  span
+    font-size: 1.4rem
+    display: block
+    position: absolute
+    +center
+  svg
+    display: block
+    position: absolute
+    +center
+    width: 16px
+    height: 16px
+    fill: $white
+  &.is-visible, &.fade-out
+    transition: opacity 0.3s 0s, visibility 0s 0s
+  .no-touch &:hover
+    transition: opacity 0.3s 0s, visibility 0s 0s
+    opacity: 1
+    color: shade($accent-color, 20%)
+    svg
+      fill: shade($accent-color, 20%)
+    &::after
+      transform: translateX(-50%) translateY(-50%) scale(1)
+  &.is-visible
+    visibility: visible
+    opacity: 1
+  &.fade-out
+    opacity: 1
+  +MQ(M)
+    +position(fixed, null 20px 20px null)
+/* ------------------------------------------------*/
+/* Buttons & Triggers Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Intro Styles Start
+/* ------------------------------------------------*/
+.main
+  position: relative
+  min-width: 320px
+  overflow: hidden
+  background-color: shade($base-color, 5%)
+  background-repeat: no-repeat
+  background-position: top left, bottom left
+  background-size: contain
+  background-image: url("../img/demo/bg-intro-landscape.svg"), url("../img/demo/bg-list-landscape.svg")
+
+@media (orientation: landscape)
+  .main
+    background-image: url("../img/demo/bg-intro-landscape.svg"), url("../img/demo/bg-list-landscape.svg")
+
+@media (orientation: portrait)
+  .main
+    background-image: url("../img/demo/bg-intro-portrait.svg"), url("../img/demo/bg-list-portrait.svg")
+
+.main__header
+  position: relative
+  padding-top: 5rem
+
+.header__container,
+.headline
+  position: relative
+  padding: 0 calc(10% - 15px)
+  +MQ(XL)
+    padding: 0 8.5rem
+  +MQ(XXL)
+    padding: 0 10.5rem
+
+.header__logo
+  position: relative
+  width: auto
+  height: 36px
+  margin-bottom: 2rem
+  img
+    display: block
+    width: auto
+    height: 100%
+    margin: 0 auto
+  +MQ(M)
+    height: 4rem
+    padding-top: 0.4rem
+    margin-bottom: 0
+    img
+      margin: 0
+
+.header__btnholder
+  position: relative
+  text-align: center
+  +MQ(M)
+    text-align: right
+
+.main__content
+  position: relative
+  padding: 6rem 0
+  +MQ(XL)
+    padding: 5rem 0
+/* ------------------------------------------------*/
+/* Intro Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Preview Sections Styles Start
+/* ------------------------------------------------*/
+.main__demo
+  position: relative
+  padding-bottom: 4rem
+  overflow: hidden
+  &.first-section
+    padding-top: 2rem
+  &.has-title
+    padding-top: 3.8rem
+  +MQ(M)
+    &.has-title
+      padding-top: 8.8rem
+  +MQ(XL)
+    &.first-section
+      padding-top: 8rem
+  +MQ(XXL)
+    padding-bottom: 7rem
+    &.has-title
+      padding-top: 11.4rem
+/* ------------------------------------------------*/
+/* Preview Sections Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Headline Styles Start
+/* ------------------------------------------------*/
+.demo__background
+  position: absolute
+  top: 0
+  +center(x)
+  text-align: center
+  span
+    font: normal 400 6.4rem/.7 $title-font
+    text-transform: uppercase
+    letter-spacing: 0.2rem
+    white-space: nowrap
+    color: shade($base-color, 14%)
+  +MQ(M)
+    span
+      font-size: 16rem
+  +MQ(XL)
+    span
+      font-size: 16rem
+  +MQ(XXL)
+    span
+      font-size: 20rem
+/* ------------------------------------------------*/
+/* Headline Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Preview Links Styles Start
+/* ------------------------------------------------*/
+.demo__links
+  position: relative
+  width: 100%
+  padding: 0 calc(10% - 15px)
+  +MQ(XL)
+    padding: 0 8.5rem
+  +MQ(XXL)
+    padding: 0 10.5rem
+
+.links__item
+  display: block
+  position: relative
+  margin-bottom: 4rem
+  a
+    display: block
+    .no-touch &:hover
+      .links__image
+        &::after
+          opacity: 1
+        img
+          opacity: 0.2
+      .new-item
+        &::before
+          top: -14px
+          box-shadow: 0 8px 17px 2px rgba(0,0,0,0.1), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.14)
+  +MQ(XXL)
+    margin-bottom: 6rem
+
+.new-item
+  &::before
+    content: 'NEW'
+    +position(absolute, -10px -10px null null)
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: red
+    color: $txt-light
+    font: normal 600 1.2rem/51px $default-font
+    letter-spacing: 0.06rem
+    text-transform: uppercase
+    text-align: center
+    z-index: 12
+    transition: all .3s ease-in-out
+
+.links__image
+  position: relative
+  width: 100%
+  z-index: 1
+  transition: all .3s ease-in-out
+  &::after
+    content: ''
+    display: block
+    +position(absolute, 0 null null 0)
+    width: 100%
+    height: 100%
+    background-color: transparent
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    background-image: url("../img/demo/bg-item.svg")
+    z-index: -1
+    opacity: 0
+    transition: opacity .5s ease-in-out
+  img
+    opacity: 1
+    transition: opacity .5s ease-in-out
+/* ------------------------------------------------*/
+/* Preview Links Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Subscribe Section Styles Start
+/* ------------------------------------------------*/
+.subscribe
+  position: relative
+  min-width: 320px
+  padding: 8rem 0
+  background-color: $accent-color
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-image: url('../img/demo/bg-demo-subscribe.jpg')
+  +MQ(M)
+    padding: 8rem 0
+  +MQ(XL)
+    background-attachment: fixed
+  +MQ(XXL)
+    padding: 13rem 0
+
+.subscribe__container
+  position: relative
+  width: 100%
+  padding: 0 calc(10% - 15px)
+  +MQ(XL)
+    padding: 0 8.5rem
+  +MQ(XXL)
+    padding: 0 10.5rem
+
+.subscribe__content
+  max-width: 500px
+
+.subscribe__title
+  margin-bottom: 3.8rem
+  .subtitle
+    display: block
+    font: normal 400 1.4rem/1.2 $default-font
+    text-transform: uppercase
+    letter-spacing: 0.2rem
+    margin-bottom: 2.3rem
+    padding-left: 2px
+    color: $txt-light-medium
+  .title
+    font: normal 400 3.6rem/1 $title-font
+    text-transform: uppercase
+    letter-spacing: 0.1rem
+    color: $txt-light
+    margin-bottom: 2rem
+  .descr
+    font: normal 400 1.6rem/1.6 $default-font
+    margin-top: 1.7rem
+    padding-left: 2px
+    color: $txt-light-medium
+
+.form-container
+  position: relative
+  padding-top: 1.4rem
+
+.form
+  opacity: 1
+  transition: opacity .5s ease-in-out
+  &.is-hidden
+    opacity: 0
+
+form
+  position: relative
+  width: 100%
+  input, textarea
+    position: relative
+    display: block
+    width: 100%
+    border: none
+    outline: none
+    margin: 0
+    padding: 0
+    background-color: transparent
+    padding: 1.6rem 0.2rem
+    font: normal 300 1.6rem/1.7 $default-font
+    border-bottom: 1px solid rgba($white, .6)
+    color: $txt-light
+    &:focus
+      border-bottom: 1px solid $accent-color
+  input
+    height: 5rem
+    margin-bottom: 2.4rem
+    &.margin-s
+      margin-bottom: .5rem
+  textarea
+    height: 14rem
+    margin-bottom: .5rem
+  .inputs-description
+    display: block
+    width: 100%
+    margin-bottom: 1.6rem
+    text-align: right
+    font: normal 400 1.3rem/1.2 $default-font
+    color: $txt-light-mute
+  ::-webkit-input-placeholder
+    color: $txt-light-mute
+  :-moz-placeholder
+    color: $txt-light-mute
+  ::-moz-placeholder
+    color: $txt-light-mute
+  :-ms-input-placeholder
+    color: $txt-light-mute
+  input:focus:required:invalid,
+  textarea:focus:required:invalid
+    color: $txt-light
+  input:required:valid,
+  textarea:required:valid
+    color: $txt-light
+
+.reply-group
+  position: absolute
+  top: 1.4rem
+  left: 0
+  width: 100%
+  max-width: 440px
+  text-align: left
+  opacity: 0
+  transition: opacity .5s ease-in-out
+  &.is-visible
+    opacity: 1
+
+.reply-group__icon
+  text-align: center
+  font-size: 4rem
+  color: $accent-color
+  margin-bottom: 1.2rem
+
+.reply-group__title
+  font: normal 400 2.5rem/1 $title-font
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  color: $white
+  margin-bottom: 0.6rem
+
+.reply-group__text
+  display: block
+  font: normal 400 1.6rem/1.6 $default-font
+  color: $txt-light-mute
+/* ------------------------------------------------*/
+/* Subscribe Section Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Footer Styles Start
+/* ------------------------------------------------*/
+.footer
+  background-color: $base-color-dark
+  position: relative
+  padding: 4rem calc(10% - 15px)
+  text-align: center
+  +MQ(XL)
+    padding: 4.8rem 8.5rem
+  +MQ(XXL)
+    padding: 6rem 10.5rem
+/* ------------------------------------------------*/
+/* Footer Styles End
+/* ------------------------------------------------*/

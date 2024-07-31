@@ -1,0 +1,14 @@
+/Volumes/BGR2000/git_2023/DotNetProject/bin/Debug/net8.0/DotNetProject
+/Volumes/BGR2000/git_2023/DotNetProject/bin/Debug/net8.0/DotNetProject.deps.json
+/Volumes/BGR2000/git_2023/DotNetProject/bin/Debug/net8.0/DotNetProject.runtimeconfig.json
+/Volumes/BGR2000/git_2023/DotNetProject/bin/Debug/net8.0/DotNetProject.dll
+/Volumes/BGR2000/git_2023/DotNetProject/bin/Debug/net8.0/DotNetProject.pdb
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.AssemblyInfoInputs.cache
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.AssemblyInfo.cs
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.csproj.CoreCompileInputs.cache
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.dll
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/refint/DotNetProject.dll
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.pdb
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/DotNetProject.genruntimeconfig.cache
+/Volumes/BGR2000/git_2023/DotNetProject/obj/Debug/net8.0/ref/DotNetProject.dll

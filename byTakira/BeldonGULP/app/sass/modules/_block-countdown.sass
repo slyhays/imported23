@@ -1,0 +1,28 @@
+.media__countdown
+  +position(absolute, null 10% 2.3rem null)
+  text-align: right
+  #countdown
+    position: relative
+    font: normal 400 6rem/1 $title-font
+    letter-spacing: 0.16rem
+    text-transform: uppercase
+    color: $white
+  .help-text
+    display: block
+    font: normal 700 1.2rem/1.2 $default-font
+    text-transform: uppercase
+    letter-spacing: 0.16rem
+    color: $white
+    margin-top: .8rem
+  .countdown-period
+    color: rgba($white, 0.5)
+    letter-spacing: normal
+  +MQ(M)
+    #countdown
+      font-size: 9rem
+  +MQ(XL)
+    +position(absolute, null 6rem 2.8rem null)
+  +MQ(XXL)
+    +position(absolute, null 8rem 3.8rem null)
+    #countdown
+      font-size: 13rem

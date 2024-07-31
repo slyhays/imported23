@@ -1,0 +1,485 @@
+/*! ------------------------------------------------
+   Project Name: Beldon - Coming Soon and Landing Page Template
+   Project Description: Beldon - awesome coming soon template to kick-start your project
+   Tags: mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page
+   Version: 1.0.2
+   Build Date: November 2021
+   Last Update: December 2022
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: https://themeforest.net/user/mix_design
+   File name: color-light.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Template Backgrounds
+    2. Base
+    3. Cursor
+    4. Typography
+    5. Buttons & Triggers
+    6. Forms and Forms Reply Groups
+    7. Header
+    8. Main Section
+    9. Countdown
+    10. Menu
+    11. Notify
+    12. Content Sections
+    13. Video Block
+    14. Skillbars
+    15. Google Map
+    16. Gallery Custom Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+// Import Libs, Mixins and Variables
+@import "../partials/layout"
+@import "../partials/mixins"
+@import "../partials/variables"
+
+/* ------------------------------------------------*/
+/* Template Backgrounds Colors Start
+/* ------------------------------------------------*/
+.svg-background-1,
+.svg-background-2,
+.svg-background-3
+  background-color: $gray-light-bg
+/* ------------------------------------------------*/
+/* Template Backgrounds Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Base Colors Start
+/* ------------------------------------------------*/
+::selection
+  background-color: rgba($accent-color, 0.7)
+  color: $white
+
+::-webkit-scrollbar
+  background: tint($accent-color, 60%)
+
+::-webkit-scrollbar-track
+  background: tint($accent-color, 60%)
+
+::-webkit-scrollbar-thumb
+  background-color: $accent-color
+
+.color-layer-black
+  background-color: rgba(#0c0c28, .4)
+
+.color-layer-gradient-bottom
+  background: linear-gradient(to bottom, rgba($accent-color,0.1) 0%,rgba($accent-color,0.5) 100%)
+  mix-blend-mode: multiply
+
+.color-layer-gradient
+  background: linear-gradient(135deg, rgba(86,55,137,0.6) 0%,rgba(152,25,154,0.6) 35%,rgba(15,15,84,0.6) 100%)
+  mix-blend-mode: multiply
+/* ------------------------------------------------*/
+/* Base Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Cursor Colors Start
+/* ------------------------------------------------*/
+.cursor
+  background-color: $accent-color-light
+/* ------------------------------------------------*/
+/* Cursor Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Typography Colors Start
+/* ------------------------------------------------*/
+p
+  color: $medium-gray
+
+h1
+  color: $black
+
+.headline__subtitle
+  color: $mute-gray
+
+.headline__descr
+  color: $medium-gray
+
+h2
+  color: $black
+
+.block__subtitle
+  color: $mute-gray
+
+.block__text
+  color: $medium-gray
+
+.section-slogan
+  color: rgba($white, 0.5)
+
+h3
+  color: $txt-dark
+  small
+    color: $mute-gray
+
+h4
+  color: $black
+  small
+    color: $mute-gray
+
+.team__descr
+  color: $medium-gray
+
+h5
+  color: $black
+
+.contact-data__item
+  p
+    color: $medium-gray
+  a
+    color: $medium-gray
+    .no-touch &:hover
+      color: $black
+  ul
+    li
+      color: $medium-gray
+      a
+        color: $medium-gray
+        .no-touch &:hover
+          color: $black
+
+.socials-text
+  color: $mute-gray
+  li
+    &::after
+      color: $mute-gray
+    a
+      color: $mute-gray
+      .no-touch &:hover
+        color: $black
+
+.socials-icons
+  color: $mute-gray
+  li
+    a
+      color: $mute-gray
+    .no-touch &:hover
+      a
+        color: $black
+
+.copyright
+  color: $mute-gray
+  a
+    color: $mute-gray
+    .no-touch &:hover
+      color: $black
+
+blockquote
+  p
+    color: $txt-dark-medium
+    span
+      color: $accent-color-mute
+  cite
+    color: $mute-gray
+/* ------------------------------------------------*/
+/* Typography Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Buttons & Triggers Colors Start
+/* ------------------------------------------------*/
+.menu-trigger
+  color: $dark-gray
+  svg
+    fill: $black
+  &.light-desktop
+    color: $dark-gray
+    svg
+      fill: $black
+  &.dark-desktop
+    color: $dark-gray
+    svg
+      fill: $black
+  +MQ(XL)
+    &.light-desktop
+      color: $white
+      svg
+        fill: $white
+    &.dark-desktop
+      color: $dark-gray
+      svg
+        fill: $black
+
+.round-button
+  .no-touch &:hover
+    .button__icon
+      color: $txt-light
+    .button__caption
+      color: $black
+
+.button__caption
+  color: $black
+
+.button__icon
+  border: 1px solid $accent-color-mute
+  color: $accent-color-mute
+  &::after
+    background-color: $accent-color
+
+.intro__scroll
+  &::after
+    background-color: $white
+
+.inner-video-trigger
+  border: 1px solid $white
+  color: $white
+  &::after
+    background-color: $white
+  .no-touch &:hover
+    color: $black
+
+.btn
+  color: $txt-dark
+
+.btn-solid
+  background-color: $accent-color
+  color: $white
+  border: 1px solid $accent-color
+  &::after
+    background-color: $white
+  .no-touch &:hover
+    color: $txt-dark
+/* ------------------------------------------------*/
+/* Buttons & Triggers Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Forms and Forms Reply Colors Start
+/* ------------------------------------------------*/
+form
+  input, textarea
+    border-bottom: 1px solid rgba($black, .4)
+    color: $txt-dark
+    &:focus
+      border-bottom: 1px solid $accent-color
+  .inputs-description
+    color: $mute-gray
+  ::-webkit-input-placeholder
+    color: tint($mute-gray, 30%)
+  :-moz-placeholder
+    color: tint($mute-gray, 30%)
+  ::-moz-placeholder
+    color: tint($mute-gray, 30%)
+  :-ms-input-placeholder
+    color: tint($mute-gray, 30%)
+  input:focus:required:invalid,
+  textarea:focus:required:invalid
+    color: $txt-dark
+  input:required:valid,
+  textarea:required:valid
+    color: $txt-dark
+
+.reply-group__icon
+  color: $accent-color
+
+.reply-group__title
+  color: $black
+
+p
+  &.reply-group__title
+    color: $black
+
+.reply-group__text
+  color: $medium-gray
+/* ------------------------------------------------*/
+/* Forms and Forms Reply Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Header Colors Start
+/* ------------------------------------------------*/
+.header
+  background-color: transparent
+
+.header__logo
+  &.replace-to-light
+    &::after
+      background-image: url("../../img/logo-light.svg")
+
+.header__underline
+  background-color: $gray-controls
+  &.light-desktop
+    background-color: $gray-controls
+  &.dark-desktop
+    background-color: $gray-controls
+  +MQ(XL)
+    &.light-desktop
+      background-color: $white
+    &.dark-desktop
+      background-color: $gray-controls
+/* ------------------------------------------------*/
+/* Header Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Main Section Colors Start
+/* ------------------------------------------------*/
+.main
+  background-color: $base-color
+
+.main__intro
+  background-color: $base-color
+
+.media__content
+  background-color: $accent-color
+/* ------------------------------------------------*/
+/* Main Section Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Countdown Colors Start
+/* ------------------------------------------------*/
+.media__countdown
+  #countdown
+    color: $white
+  .help-text
+    color: $white
+  .countdown-period
+    color: rgba($white, 0.5)
+/* ------------------------------------------------*/
+/* Countdown Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Menu Colors Start
+/* ------------------------------------------------*/
+.nav
+  background-color: $gray-light-bg
+
+.nav__media
+  background-color: $white
+
+.media__container
+  background-color: $white
+
+.menu__link
+  color: $black
+  .no-touch &:hover
+    color: $accent-color
+  &.active-trigger
+    color: $accent-color
+    .no-touch &:hover
+      color: shade($accent-color, 20%)
+/* ------------------------------------------------*/
+/* Menu Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Notify Colors Start
+/* ------------------------------------------------*/
+.notify
+  background-color: $gray-light-bg
+  +MQ(XL)
+    background-color: rgba($gray-light-bg, 0.5)
+
+.popup-title__subtitle
+  color: $mute-gray
+
+.popup-title__title
+  color: $black
+
+.popup-title__text
+  color: $medium-gray
+
+.notify-close
+  &::before,
+  &::after
+    background-color: $black
+  .no-touch &:hover
+    &::before,
+    &::after
+      background-color: $mute-gray
+/* ------------------------------------------------*/
+/* Notify Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Content Sections Colors Start
+/* ------------------------------------------------*/
+.inner
+  background-color: $gray-light-bg
+
+.inner__intro
+  background-color: $accent-color
+/* ------------------------------------------------*/
+/* Content Sections Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Video Block Colors Start
+/* ------------------------------------------------*/
+.inner-video
+  background-color: $accent-color
+/* ------------------------------------------------*/
+/* Video Block Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Skillbars Colors Start
+/* ------------------------------------------------*/
+.skillbar
+  border-bottom: 1px solid rgba($black, 0.1)
+
+.skillbar-title
+  color: $black
+
+.skillbar-bar
+  background-color: $accent-color
+
+.skill-bar-percent
+  color: $black
+/* ------------------------------------------------*/
+/* Skillbars Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Google Map Colors Start
+/* ------------------------------------------------*/
+.google-map
+  background-color: $accent-color
+
+#zoom-in, #zoom-out
+  border: 1px solid $accent-color
+  background-color: $white
+  color: shade($accent-color, 20%)
+  &::after
+    background-color: $accent-color
+  .no-touch &:hover
+    color: $txt-light
+/* ------------------------------------------------*/
+/* Google Map Colors End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Gallery Custom Colors Start
+/* ------------------------------------------------*/
+.pswp__caption__center
+  h3
+    color: $txt-light
+    small
+      color: $txt-light-mute
+  p
+    color: $txt-light-medium
+
+.pswp__bg
+  background-color: shade($accent-color, 70%)
+  &::after
+    background-color: shade($accent-color, 70%)
+
+.pswp__button--close
+  background-color: $additional-color
+/* ------------------------------------------------*/
+/* Gallery Custom Colors Start
+/* ------------------------------------------------*/

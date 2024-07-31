@@ -1,0 +1,302 @@
+#main
+  .media__content
+    transform: translate3d(100px, 0, 0)
+    opacity: 0
+  .headline__subtitle,
+  .headline__title,
+  .headline__descr,
+  .headline__btnholder
+    opacity: 0
+    transform: translateY(3rem)
+  .intro__socials,
+  .intro__copyright
+    opacity: 0
+  .main__intro
+    .color-layer
+      opacity: 0
+  .intro__headline
+    opacity: 1
+    transition: opacity 0.6s ease-in-out
+
+#main
+  &.animate-in
+    .media__content
+      transform: translate3d(0, 0, 0)
+      opacity: 1
+      transition: all 0.6s
+    .headline__subtitle
+      opacity: 1
+      transform: translateY(0)
+      transition: opacity 0.6s 0.3s, transform 0.6s 0.3s
+    .headline__title
+      opacity: 1
+      transform: translateY(0)
+      transition: opacity 0.6s 0.4s, transform 0.6s 0.4s
+    .headline__descr
+      opacity: 1
+      transform: translateY(0)
+      transition: opacity 0.6s 0.5s, transform 0.6s 0.5s
+    .headline__btnholder
+      opacity: 1
+      transform: translateY(0)
+      transition: opacity 0.6s 0.6s, transform 0.6s 0.6s
+    .intro__socials,
+    .intro__copyright
+      opacity: 1
+      transition: opacity 0.8s 1s
+    .main__intro
+      .color-layer
+        opacity: 1
+        transition: opacity 0.8s 1s
+  &.notify-is-visible
+    .intro__headline
+      opacity: 0
+      transition: opacity 0.6s ease-in-out
+    .media__cover
+      opacity: 0.6
+      visibility: visible
+
+#notify
+  .popup-title__subtitle,
+  .popup-title__title,
+  .popup-title__text
+    opacity: 0
+    transform: translateY(3rem)
+  .form
+    input,
+    .inputs-description,
+    button
+      opacity: 0
+      transform: translateY(3rem)
+
+#notify
+  &.animate-in
+    opacity: 1
+    visibility: visible
+    transition: all 0.6s ease-in-out
+    .popup-title__subtitle,
+    .popup-title__title,
+    .popup-title__text
+      opacity: 1
+      transform: translateY(0)
+    .form
+      input,
+      .inputs-description,
+      button
+        opacity: 1
+        transform: translateY(0)
+    .popup-title__subtitle
+      transition: opacity 0.6s 0s, transform 0.6s 0s
+    .popup-title__title
+      transition: opacity 0.6s 0.1s, transform 0.6s 0.1s
+    .popup-title__text
+      transition: opacity 0.6s 0.2s, transform 0.6s 0.2s
+    .form
+      input,
+      .inputs-description
+        transition: opacity 0.6s 0.3s, transform 0.6s 0.3s
+    .form
+      button
+        transition: opacity 0.6s 0.4s, transform 0.6s 0.4s, color .5s
+  &.animate-out
+    opacity: 0
+    visibility: hidden
+
+.inner
+  .section-slogan
+    .left
+      opacity: 0
+      transform: translateX(-30px)
+    .right
+      opacity: 0
+      transform: translateX(30px)
+  .intro__scroll
+    opacity: 0
+
+.inner
+  &.animate-in
+    .section-slogan
+      .left,
+      .right
+        opacity: 1
+        transform: translateX(0)
+        transition: all .6s ease-in-out
+    .intro__scroll
+      opacity: 1
+      transition: all .3s .6s ease-in-out
+
+#nav
+  .menu__item
+    transform: translateX(5rem)
+    opacity: 0
+    transition: translateX 0.3s, opacity 0.3s
+  .color-layer-svg-menu
+    opacity: 0
+    transition: opacity 0.8s
+
+#nav
+  &.animate-in
+    opacity: 1
+    visibility: visible
+    transition: all .6s ease-in-out
+    .menu__item
+      transform: translateX(0)
+      opacity: 1
+      &:nth-of-type(1)
+        transition: transform 0.6s 0.6s, opacity 0.6s 0.6s
+      &:nth-of-type(2)
+        transition: transform 0.6s 0.7s, opacity 0.6s 0.7s
+      &:nth-of-type(3)
+        transition: transform 0.6s 0.8s, opacity 0.6s 0.8s
+      &:nth-of-type(4)
+        transition: transform 0.6s 0.9s, opacity 0.6s 0.9s
+    .color-layer-svg-menu
+      opacity: 1
+      transition: opacity 0.8s 0.9s
+  &.animate-out
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.6s 0.6s , visibility 0s 1.2s
+    .menu__item
+      transform: translateX(0)
+      opacity: 0
+      &:nth-of-type(4)
+        transition: opacity 0.3s 0s
+      &:nth-of-type(3)
+        transition: opacity 0.3s 0.1s
+      &:nth-of-type(2)
+        transition: opacity 0.3s 0.2s
+      &:nth-of-type(1)
+        transition: opacity 0.3s 0.3s
+
+#header
+  .header__logo,
+  .header__controls
+    opacity: 0
+  .header__underline
+    width: 0
+    transition: width 0.3s, background-color 0.6s
+  .menu-trigger
+    transition: color 0.6s
+    svg
+      transition: fill 0.6s
+  .header__logo
+    img
+      transition: opacity 0.6s
+    &::after
+      transition: opacity 0.6s
+
+#header
+  transition: height 0.5s, background-color 0.5s, opacity 0.5s, visibility 0.5s
+  &.animate-in
+    .header__underline
+      width: 50%
+      transition: width 0.3s, background-color 0.6s
+    .header__logo,
+    .header__controls
+      opacity: 1
+      transition: opacity 0.8s 0.3s
+  &.menu-is-visible
+    .underline-1,
+    .underline-2
+      background-color: $gray-controls
+      transition: background-color 0.6s
+    .menu-trigger
+      color: $txt-light
+      transition: color 0.6s
+      &.light-desktop
+        color: $dark-gray
+        svg
+          fill: $black
+      &.dark-desktop
+        color: $dark-gray
+        svg
+          fill: $black
+          transition: fill 0.6s
+    .header__logo
+      img
+        opacity: 1
+        transition: opacity 0.6s
+      &::after
+        opacity: 0
+        transition: opacity 0.6s
+  &.inner-is-visible
+    .underline-1,
+    .underline-2
+      background-color: $white
+    .menu-trigger
+      color: $txt-light
+      &.light-desktop
+        color: $txt-light
+        svg
+          fill: $white
+      &.dark-desktop
+        color: $txt-light
+        svg
+          fill: $white
+    .header__logo
+      img
+        opacity: 0
+      &::after
+        opacity: 1
+  &.notify-is-visible
+    opacity: 0
+    visibility: hidden
+    transition: all 0.5s ease-in-out
+  &.smaller
+    height: 60px
+    backdrop-filter: blur(12px)
+    background-color: rgba($white, 0.5)
+    .underline-1,
+    .underline-2
+      background-color: transparent
+    .menu-trigger
+      color: $dark-gray
+      &.light-desktop
+        color: $dark-gray
+        svg
+          fill: $black
+      &.dark-desktop
+        color: $dark-gray
+        svg
+          fill: $black
+    .header__logo
+      img
+        opacity: 1
+      &::after
+        opacity: 0
+  &.dark
+    &.inner-is-visible
+      .underline-1,
+      .underline-2
+        background-color: $white
+      .menu-trigger
+        color: $txt-light
+        svg
+          fill: $white
+      .header__logo
+        img
+          opacity: 1
+    &.smaller
+      background-color: rgba($accent-color, 0.3)
+      .underline-1,
+      .underline-2
+        background-color: transparent
+      .menu-trigger
+        color: $white
+        svg
+          fill: $white
+      .header__logo
+        img
+          opacity: 1
+  +MQ(XL)
+    &.notify-is-visible
+      opacity: 1
+      visibility: visible
+      .header__controls
+        opacity: 0
+        visibility: hidden
+        transition: all 0.3s
+  +MQ(XXL)
+    &.smaller
+      height: 70px

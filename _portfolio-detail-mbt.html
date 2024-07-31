@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Imurjn Creative HTML5 Portfolio " />
+
+  <title>Made by Takira </title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="dark">
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Cursor</h2>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">mode</h2>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button data-mode="light">light</button>
+          <button class="active" data-mode="dark">dark</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+
+
+  <!-- Scroll Smoother -->
+  <div class="has-smooth" id="has_smooth"></div>
+
+
+  <!-- Go Top Button -->
+  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+  <!-- Header area start -->
+  <header class="header__area">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img class="logo-primary" src="assets/imgs/logo/logo_white_2.png" alt="Site Logo" width="33" height="100">
+          <img class="logo-secondary" src="assets/imgs/logo/logo_white_2.png" alt="Mibile Logo" width="33" height="100">
+        </a>
+      </div>
+      <div class="header__nav-icon">
+        <button id="open_offcanvas"><img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
+      </div>
+      <div class="header__support">
+        <p>Support center <a href="tel:+9177402887">(917) 740-2887</a></p>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+
+  <!-- Offcanvas area start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas__body">
+      <div class="offcanvas__left">
+        <div class="offcanvas__logo">
+          <a href="index.html"><img src="assets/imgs/logo/logo_white.png" alt="Offcanvas Logo" width="100" height="33"></a>
+        </div>
+        <div class="offcanvas__social">
+          <h3 class="social-title">Follow Us</h3>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas__links">
+          <ul>
+            <li><a href="_about.html">About</a></li>
+            <li><a href="_contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas__mid">
+        <div class="offcanvas__menu-wrapper">
+          <nav class="offcanvas__menu">
+            <ul class="menu-anim">
+              <li><a href="index.html">home</a>
+                <ul>
+                  
+                </ul>
+              </li>
+              <li><a href="_about.html">about</a></li>
+              <li>
+                <a href="_portfolio.html">projects</a>
+              </li>
+              <li><a href="_service.html">services</a>  
+              </li>
+              <li><a href="_team.html">leadership</a>
+               
+              </li>
+              <li><a href="_contact.html">views</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="offcanvas__right">
+        <div class="offcanvas__search">
+          <form action="#">
+            <input type="text" name="search" placeholder="Search keyword">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="offcanvas__contact">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li><a href="tel:9177402887">(917) 740-2887</a></li>
+            <li><a href="mailto:info@imujrncreative.com">info@imurjn.com</a></li>
+            <li>PO Box 8835<br>Jamaica, New York 11432</li>
+          </ul>
+        </div>
+        <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
+        <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
+      </div>
+      <div class="offcanvas__close">
+        <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas area end -->
+
+
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+
+        <!-- Portfolio area start -->
+        <section class="portfolio__detail">
+          <div class="portfolio__detail-top">
+            <div class="container g-0 line pt-110 pb-130">
+              <span class="line-3"></span>
+
+              <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-7 col-md-7">
+                  <div class="sec-title-wrapper">
+                    <h2 class="sec-title animation__char_come">MADE by<br>TAKIRA</h2>
+                  </div>
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-5">
+                  <div class="portfolio__detail-info">
+                    <ul>
+                      <li>Category <a href="_category.html">Branding, Design, Development</a></li>
+                      <li>Client <span><a href="byTakira/HTML/index.html" style="color:yellowgreen">MADE by Takira</a></span></li>
+                      <li>Start Date <span>29 May 2022</span></li>
+                      <li>Handover <span>27 January 2023</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__detail-thumb">
+            <img src="assets/imgs/portfolio/detail/DTS_1.png" alt="Portfolio Thumbnail" data-speed="auto">
+          </div>
+
+          <div class="portfolio__detail-content">
+            <div class="container g-0 line pt-140">
+              <span class="line-3"></span>
+
+              <div class="block-content">
+                <div class="row">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                    <h2 class="portfolio__detail-title title-anim">A design strategy<br>that aligns with<br>the brand's business strategy and target market.</h2>
+                  </div>
+
+                  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                    <div class="portfolio__detail-text">
+                      <p>MADE by Takira is a new luxury brand that aims to create a unique and exclusive fashion experience for its customers.
+                        The brand's aestethic is minimalistic, with a focus on high-quality materials and innovative designs.  Through its commitment
+                        to sustainable manufacturing practices, use of high-quality craftmanship and exclusive branding and marketing strategies, MADE by Takira
+                        aims to establish itself as a leader in the luxury fashion market.</p>
+
+                      <ul>
+                        <li>+ Brand Strategy</li>
+                        <li>+ Front-end Development</li>
+                        <li>+ Copywriting</li>
+                        <li>+ Art Direction & Photography</li>
+                        <li>+ Marketing & Promotion</li>
+                        <li>+ Typography</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="block-thumb">
+                <img src="assets/imgs/portfolio/detail/DTS_6322.png" alt="Portfolio Image" data-speed="0.5">
+              </div>
+
+
+
+              <div class="block-content  pt-140">
+                <div class="row">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                    <h2 class="portfolio__detail-title title-anim">Visual and typograpy
+                      hierarchy</h2>
+                  </div>
+
+                  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                    <div class="portfolio__detail-text">
+                      <p>Visual hierarchy is the principle of arranging elements to show
+                        their order of importance.
+                        Designers
+                        structure visual characteristics—e.g., menu icons—so users can understand information easily.
+                        By
+                        laying out elements logically and strategically, designers influence users’ perceptions and
+                        guide
+                        them
+                        to desired actions. Users notice larger elements more easily can convert.
+                      </p>
+
+                      <div class="fonts">
+                        <img src="assets/imgs/portfolio/detail/shape.png" alt="Font Style">
+                        <ul>
+                          <li class="regular"><span>regular</span> This is text message</li>
+                          <li class="medium"><span>Medium</span> Medium typography</li>
+                          <li class="semibold"><span>SemiBold</span> Just Amazing</li>
+                          <li class="blod"><span>Blod</span> Awesome</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="block-gallery">
+                <img src="assets/imgs/portfolio/detail/DTS_4014.png" alt="Portfolio Image">
+                <img src="assets/imgs/portfolio/detail/DTS_4015.png" alt="Portfolio Image">
+              </div>
+
+              <div class="block-thumb">
+                <img src="assets/imgs/portfolio/detail/My project-1.png" alt="Portfolio Image" data-speed="0.5">
+              </div>
+
+              <div class="block-img-text">
+                <img src="assets/imgs/portfolio/detail/DTS_7126.png" alt="Portfolio Image">
+                <img src="assets/imgs/portfolio/detail/DTS_6447.png" alt="Portfolio Image">
+                <p>MADE by Takira is a new luxury brand that aims to create a unique and exclusive fashion experience for its customers.
+                  The brand's aestethic is minimalistic, with a focus on high-quality materials and innovative designs.  Through its commitment
+                  to sustainable manufacturing practives, use of high-quality craftmanship and exclusive branding and marketing strategies, MADE by TAKIRA
+                  aims to establish itself as a leader in the luxury fashion market.
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+                  <div class="portfolio__detail-btns pt-140 pb-140">
+                    <a href="_portfolio-detail-t4fc.html" class="wc-btn-primary btn-hover"><span></span> Prev Work</a>
+                    <a href="_portfolio-detail-leaph.html" class="wc-btn-primary btn-hover"><span></span> Next Work</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- Portfolio area end -->
+
+      </main>
+
+
+
+   <!-- Footer area start -->
+<footer class="footer__area-3">
+  <div class="footer__top-3">
+    <div class="footer__top-wrapper-3">
+      <div class="footer__logo-3 pt-120">
+        <img src="assets/imgs/logo/logo_white.png" alt="Footer Logo" width="100" height="33">
+        <p>We don't study the culture, we are the culture. Yada yada yada you know what's up.</p>
+      </div>
+      <div class="footer__social-3">
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact-3">
+        <a class="end" href="_contact.html">Let’s talk</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="footer__btm-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4">
+          <div class="footer__copyright-3">
+            <p>© 2022 - 2025 | All Rights Reserved by <a href="#" target="_blank">Imurjn Creative</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xxl-8 col-xl-8 col-lg-8">
+          <div class="footer__nav-2">
+            <ul class="footer-menu-2 menu-anim">
+              <li><a href="_about.html">history</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="_team.html">leadership</a></li>
+              <li><a href="_contact.html">connect</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer area end -->
+
+
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/chroma.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/vanilla-tilt.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

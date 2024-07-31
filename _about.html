@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Imurjn Creative HTML5 About" />
+
+  <title>About Imurjn Creative</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="dark">
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Cursor</h2>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">mode</h2>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button data-mode="light">light</button>
+          <button class="active" data-mode="dark">dark</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+
+
+  <!-- Scroll Smoother -->
+  <div class="has-smooth" id="has_smooth"></div>
+
+
+  <!-- Go Top Button -->
+  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+  <!-- Header area start -->
+  <header class="header__area">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img class="logo-primary" src="assets/imgs/logo/logo_white_2.png" alt="Site Logo" width="33" length="100">
+          <img class="logo-secondary" src="assets/imgs/logo/logo_white_2.png" alt="Mobile Logo" width="33" length="100">
+        </a>
+      </div>
+      <div class="header__nav-icon">
+        <button id="open_offcanvas"><img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
+      </div>
+      <div class="header__support">
+        <p>Support center <a href="tel:+9177402887">(917) 740-2887</a></p>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+
+
+   <!-- Offcanvas area start -->
+   <div class="offcanvas__area">
+    <div class="offcanvas__body">
+      <div class="offcanvas__left">
+        <div class="offcanvas__logo">
+          <a href="index.html"><img src="assets/imgs/logo/logo_white.png" alt="Offcanvas Logo" width="100" height="33"></a>
+        </div>
+        <div class="offcanvas__social">
+          <h3 class="social-title">Follow Us</h3>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas__links">
+          <ul>
+            <li><a href="_about.html">About</a></li>
+            <li><a href="_contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas__mid">
+        <div class="offcanvas__menu-wrapper">
+          <nav class="offcanvas__menu">
+            <ul class="menu-anim">
+              <li><a href="index.html">home</a>
+                <ul>
+                  
+                </ul>
+              </li>
+              <li><a href="_about.html">about</a></li>
+              <li>
+                <a href="_portfolio.html">projects</a>
+              </li>
+              <li><a href="_service.html">services</a>  
+              </li>
+              <li><a href="_team.html">leadership</a>
+               
+              </li>
+              <li><a href="_contact.html">views</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="offcanvas__right">
+        <div class="offcanvas__search">
+          <form action="#">
+            <input type="text" name="search" placeholder="Search keyword">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="offcanvas__contact">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li><a href="tel:9177402887"></a></li>
+            <li><a href="mailto:info@imujrn.com">info@imurjn.com</a></li>
+            <li>PO Box 8835<br>Jamaica, New York 11432</li>
+          </ul>
+        </div>
+        <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
+        <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
+      </div>
+      <div class="offcanvas__close">
+        <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas area end -->
+
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+
+        <!-- Hero area start -->
+        <section class="hero__about">
+          <div class="container g-0">
+            <span class="line-3"></span>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="hero__about-content">
+                  <h1 class="hero-title animation__word_come">We deliver innovative, impactful solutions that help small businesses stand out in the marketplace. </h1>
+                  <div class="hero__about-info">
+                    <div class="hero__about-btn">
+                      <div id="btn_wrapper">
+                        <a href="_service.html" class="wc-btn-primary btn-hover btn-item"><span></span> Tech & <br>
+                          Services
+                          <i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="hero__about-text title-anim">
+                      <p>Imurjn Create is a trailblazing agency that connects brands to the limitless possibilities of the future. Our unwavering mission is to dismantle barriers and propel businesses forward by harnessing the transformative power of AI technology. We firmly believe that success should know no boundaries, and by leveraging the immense capabilities of artificial intelligence, we make it accessible to every brand, irrespective of its size or location.
+
+                      </p>
+                    </div>
+                    <div class="hero__about-award">
+                      <!--<img src="assets/imgs/about/award.ng" alt="Best Studio Award">-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row hero__about-row">
+              <div class="col-xxl-12">
+                <div class="hero__about-video">
+                  <video loop muted autoplay playsinline>
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Hero area end -->
+
+        <!-- Story area start -->
+        <section class="story__area">
+          <div class="container g-0  pt-140">
+            <span class="line-3"></span>
+            <div class="sec-title-wrapper">
+              <div class="from-text">from <span>2014</span></div>
+
+              <div class="row">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                  <h2 class="sec-sub-title title-anim">GET TO KNOW US</h2>
+                  <h3 class="sec-title title-anim">Our Company</h3>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                  <div class="story__text">
+                    <p>
+                    We"re Imurjn Creative. A team composed of experts in various fields, such as branding, marketing, web design, and data analysis, who work together to deliver results that exceed expectations. We use agile development methodologies and collaborate closely with clients to ensure that their solutions are tailored to their unique needs and goals.</p>
+                     <p>
+                      We don't operate in one medium because creative design cannot be contained. 
+                    </p>
+                    <p>We work with a wide range of small businesses, from start-ups to established companies, to help them build their brand, reach new customers, and grow their business. What sets us apart is our deep-rooted commitment to human interactions and human-focused solutions. While AI technology lies at the core of our expertise, we understand that it is the human element that truly defines exceptional brands. By combining the best of both worlds, we craft innovative solutions that seamlessly blend cutting-edge technology with a human touch, creating experiences that resonate with customers on a profound level.
+                      <p>Imurjn Create offers a comprehensive range of services aimed at driving efficiency, optimizing operations, and fostering exponential growth. From devising tailor-made AI strategies to extracting actionable insights through advanced data analytics, we equip brands with the tools they need to navigate the ever-evolving digital landscape with confidence. Our expertise spans AI-powered marketing, intelligent chatbot development, natural language processing, recommendation systems, predictive analytics, process automation, image and video recognition, and AI-driven customer insights.
+
+                      </p>
+                      <p>We are committed to empowering brands to stay at the forefront of innovation and push boundaries. Together, we will unlock the full potential of AI technology to create human-centered solutions that elevate brands, revolutionize industries, and shape the future of business.</p>
+                        
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                <div class="story__img-wrapper">
+                  <img src="assets/imgs/story/DTS_5022.png" alt="Story Thumbnail" class="w-100">
+                </div>
+              </div>
+              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                <div class="story__img-wrapper img-anim">
+                  <img src="assets/imgs/story/DTS_3489.png" alt="Story Thumbnail" data-speed="auto">
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="story__img-wrapper">
+                  <img src="assets/imgs/story/DTS_3511.png" alt="Story Thumbnail">
+                  <img src="assets/imgs/story/DTS_4129.png" alt="Story Thumbnail">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <!-- Story area end -->
+
+        <!-- Story area start -->
+        <section class="story__area">
+          <div class="container g-0  pt-140">
+            <span class="line-3"></span>
+            <div class="sec-title-wrapper">
+              <div class="from-text">from <span>2014</span></div>
+
+              <div class="row">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                  <h2 class="sec-sub-title title-anim">Founder & Leadership</h2>
+                  <h3 class="sec-title title-anim">Our Team</h3>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                  <div class="story__text">
+                    <p>
+      
+                    Our team at Imurjn Create is a collective force of visionaries, innovators, and experts in the field of AI technology and digital strategy. Guided by a shared passion for connecting brands to the future, they bring a wealth of experience and a deep understanding of the ever-evolving business landscape. With their exceptional leadership and strategic acumen, they inspire and empower the Imurjn Create team to push boundaries and deliver outstanding results for our clients. 
+                    </p>
+                    <p>
+                    The founders' visionary leadership and strategic thinking have propelled Imurjn Create to the forefront of the industry. They inspire and guide the talented team, fostering a culture of collaboration, creativity, and continuous learning. Their forward-thinking mindset and ability to anticipate industry trends ensure that Imurjn Create remains at the cutting edge of AI technology and digital strategy.</p>
+                    <p>Above all, the founders' unwavering commitment to excellence and their relentless drive to lead the industry forward set the tone for Imurjn Create's success. Through their leadership, the founders continue to shape the agency's trajectory, empowering brands to embrace the digital age and truly lead the way. Their remarkable vision, coupled with their ability to blend technology and human-centric solutions, position Imurjn Create as a trusted partner for brands seeking to thrive in the future. 
+                    </p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="swiper team__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide team__slide">
+                  <a href="_team-details.html">
+                    <img src="assets/imgs/team/DTS_48070.png" alt="Team Member">
+                    <div class="team__info">
+                      <h4 class="team__member-name">Taj Hayes</h4>
+                      <h5 class="team__member-role">Founder & CEO</h5>
+                    </div>
+                  </a>
+                </div>
+  
+                <div class="swiper-slide team__slide">
+                  <a href="_team-details.html">
+                    <img src="assets/imgs/team/DTS_26767.png" alt="Team Member">
+                    <div class="team__info">
+                      <h4 class="team__member-name">Tyler Jameson</h4>
+                      <h5 class="team__member-role">VP Client Services</h5>
+                    </div>
+                  </a>
+                </div>
+  
+                <div class="swiper-slide team__slide">
+                  <a href="_team-details.html">
+                    <img src="assets/imgs/team/DTS_34535.png" alt="Team Member">
+                    <div class="team__info">
+                      <h4 class="team__member-name">Niqole D'Angelo</h4>
+                      <h5 class="team__member-role">VP Operations</h5>
+                    </div>
+                  </a>
+                </div>
+  
+                <div class="swiper-slide team__slide">
+                  <a href="_team-details.html">
+                    <img src="assets/imgs/team/DTS_16852.png" alt="Team Member">
+                    <div class="team__info">
+                      <h4 class="team__member-name">Stella McDowell</h4>
+                      <h5 class="team__member-role">Angel Investor</h5>
+                    </div>
+                  </a>
+                </div>     
+            
+          </div>
+        </section>
+        <!-- Story area end -->
+
+        <!-- Brand area start -->
+        <section class="brand__area">
+          <div class="container g-0  pt-140 pb-140">
+            <span class="line-3"></span>
+            <div class="row g-0">
+              <div class="col-xxl-12">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-sub-title title-anim">Partnering Brands</h2>
+                  <h3 class="sec-title title-anim">We are happy to work with existing<br>
+                    businesses and start-up brands.</h3>
+                </div>
+              </div>
+
+              <div class="brand__list">
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/1.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/2.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/3.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/4.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/5.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/6.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/3.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/4.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/5.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/6.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/1.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/2.png" alt="Brand Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brand area end -->
+
+        <!-- Team area start -->
+        <div class="portfolio__big">
+          <div class="portfolio__big-inner" style="background-image: url(assets/imgs/portfolio/detail/DTS_4135.png);"> </div>
+        </div>
+        <!-- Team area end -->
+
+        <!-- CTA area start 
+        <section class="cta__area">
+          <div class="container  pb-110 dark-p">
+            <div class="line-3"></div>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="cta__content">
+                  <p class="cta__sub-title">Work with us</p>
+                  <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
+                  <div id="btn_wrapper">
+                    <a href="_contact.html" class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         CTA area end -->
+
+      </main>
+
+<!-- Footer area start -->
+<footer class="footer__area-3">
+  <div class="footer__top-3">
+    <div class="footer__top-wrapper-3">
+      <div class="footer__logo-3 pt-120">
+        <img src="assets/imgs/logo/logo_white.png" alt="Footer Logo" width="100" height="33">
+        <p><!--insert footer quote here--></p>
+      </div>
+      <div class="footer__social-3">
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact-3">
+        <a class="end" href="_contact.html">Let’s talk</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="footer__btm-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4">
+          <div class="footer__copyright-3">
+            <p>© 2022 - 2025 | All Rights Reserved by <a href="#" target="_blank">Imurjn Creative</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xxl-8 col-xl-8 col-lg-8">
+          <div class="footer__nav-2">
+            <ul class="footer-menu-2 menu-anim">
+              <li><a href="_about.html">history</a></li>
+              <li><a href="_career.html">Career</a></li>
+              <li><a href="_faq.html">FAQs</a></li>
+              <li><a href="_team.html">leadership</a></li>
+              <li><a href="_contact.html">connect</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer area end -->
+
+
+    </div>
+  </div>
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/chroma.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/vanilla-tilt.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

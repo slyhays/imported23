@@ -1,0 +1,25 @@
+.team
+  position: relative
+  padding-top: 4rem
+
+.team__item
+  position: relative
+  margin-bottom: 4rem
+  &:last-of-type
+    margin-bottom: 0
+  +MQ(M)
+    &:nth-of-type(3)
+      margin-bottom: 0
+  +MQ(XL)
+    margin-bottom: 0
+
+.team__descr
+  margin-top: 1.4rem
+
+.team__image
+  display: block
+  position: relative
+  margin-bottom: 2.2rem
+
+.team__socials
+  margin-top: 1.5rem

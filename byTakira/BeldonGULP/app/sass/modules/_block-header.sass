@@ -1,0 +1,69 @@
+.header
+  display: block
+  +position(fixed, 0 null null 0)
+  width: 100%
+  height: 70px
+  z-index: 12
+  background-color: transparent
+  +MQ(XL)
+    height: 80px
+  +MQ(XXL)
+    height: 100px
+
+.header__logo
+  position: absolute
+  left: 10%
+  +center(y)
+  z-index: 1
+  img
+    display: block
+    width: auto
+    height: auto
+    opacity: 1
+    transition: opacity .3s ease-in-out
+  &::after
+    content: ""
+    display: block
+    +position(absolute, 0 null null 0)
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    opacity: 0
+    z-index: -1
+    transition: opacity .3s ease-in-out
+  &.replace-to-light
+    &::after
+      background-image: url("../img/logo-light.svg")
+  +MQ(XL)
+    left: 6rem
+  +MQ(XXL)
+    left: 8rem
+
+.header__controls
+  position: absolute
+  right: 10%
+  +center(y)
+  +MQ(XL)
+    right: 6rem
+  +MQ(XXL)
+    right: 8rem
+
+.header__underline
+  position: absolute
+  bottom: 0
+  width: 50%
+  height: 1px
+  background-color: $gray-controls
+  &.underline-1
+    left: 50%
+  &.underline-2
+    right: 50%
+  &.light-desktop
+    background-color: $gray-controls
+  &.dark-desktop
+    background-color: $gray-controls
+  +MQ(XL)
+    &.light-desktop
+      background-color: $white
+    &.dark-desktop
+      background-color: $gray-controls

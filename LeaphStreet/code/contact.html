@@ -1,0 +1,238 @@
+<!DOCTYPE HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>Leaph Street - Contact</title>
+
+<link href="styles/style.css"     		 rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 		 rel="stylesheet" type="text/css">
+<link href="styles/owl.theme.css" 		 rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"		 rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css"	 rel="stylesheet" type="text/css">
+<link href="styles/animate.css"			 rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework.plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+</head>
+<body> 
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			LEAPH STREET
+            <em>Premium Cannabis Clubhouse</em>
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+    
+<div class="all-elements">
+    <div class="snap-drawers">
+        <!-- Left Sidebar -->
+        <div class="snap-drawer snap-drawer-left">
+            <div class="sidebar-header">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-phone"></i></a>
+                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                <a class="sidebar-close" href="#"><i class="fa fa-times"></i></a>
+            </div>
+            <!--TODO why did I link the logo in .css? Fix it -->
+            <a href="#" class="sidebar-logo"></a>
+            <div class="sidebar-decoration"></div>
+            <ul class="sidebar-menu">
+                <div class="_sidebar-login">
+                <li>  
+                    <input type="text"     class="login-username" value="Member Login ID">
+                    <input type="password" class="login-password" value="password">
+                    
+                    <a href="#" class="center-button button-green">Enter</a> 
+                    <div class="clear"></div>
+                    <a class="forgot" href="#">Forgot Password?</a>
+                </li>
+            </div>
+                <li class="has-submenu">
+                    <a class="deploy-submenu" href="#"><i class="fa fa-quote-left"></i>About Us<i class="fa fa-plus"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa fa-angle-right"></i>The Beginning<i class="fa fa-circle"></i></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>How It Works<i class="fa fa-circle"></i></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>FAQs<i class="fa fa-circle"></i></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Pricing<i class="fa fa-circle"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-exclamation"></i>Club Updates<i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-pencil-square"></i>Apply Now<i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i>Contact Us<i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-graduation-cap"></i>Higher Learning<i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-home"></i>Home<i class="fa fa-circle"></i></a></li>
+
+
+                  
+            </ul>
+            <div class="sidebar-copyright">
+                Copyright 2022. Imurj LLC<br>
+                All Rights Reserved
+            </div>
+            <div class="center-socials">
+                <a href="#" class="facebook-color facebook-social"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="google-color google-social"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="twitter-color twitter-social"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Page Content-->
+    <div id="content" class="snap-content">         
+        <div class="header">
+            <a href="#" class="sidebar-deploy"><i class="fa fa-navicon"></i></a>
+            <h3>LEAPH STREET</h3>
+            <a href="contact.html" class="contact-deploy"><i class="fa fa-envelope-o"></i></a>
+        </div>
+            
+        <div class="maps-container">
+            <iframe class="responsive-image maps" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+        </div>
+
+        <div class="content">
+            <div class="decoration"></div>
+            <div class="one-half-responsive">
+                <h4>Send us an email!</h4>
+                <p>Use the form to send us a message!</p>
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom"> 
+                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                            <div class="big-notification green-notification">
+                                <h3 class="uppercase">Message Sent </h3>
+                                <a href="#" class="close-big-notification">x</a>
+                                <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
+                            </div>
+                        </div>
+
+                        <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                            <fieldset>
+                                <div class="formValidationError" id="contactNameFieldError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Name is required!</p>
+                                    </div>
+                                </div>             
+                                <div class="formValidationError" id="contactEmailFieldError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Mail address required!</p>
+                                    </div>
+                                </div> 
+                                <div class="formValidationError" id="contactEmailFieldError2">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Mail address must be valid!</p>
+                                    </div>
+                                </div> 
+                                <div class="formValidationError" id="contactMessageTextareaError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Message field is empty!</p>
+                                    </div>
+                                </div>   
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span></label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
+                                    <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                                </div>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
+                                    <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                                </div>
+                                <div class="formSubmitButtonErrorsWrap">
+                                    <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
+                                </div>
+                            </fieldset>
+                        </form>       
+                    </div>
+                </div>
+            </div>
+            <div class="decoration hide-if-responsive"></div>
+            <div class="one-half-responsive last-column">
+                <div class="container no-bottom">
+                    <h4>Contact Information</h4>
+                    <p>
+                        <strong>Postal Information</strong><br>
+                        PO Box 16122<br>
+                        Jamaica, NY 11432
+                    </p>
+                    <p>
+                        <strong>Our Headquarters</strong><br>
+                        164st Street, suite 100 <br>
+                        Jamaica, New York 11432
+                    </p>
+                    <p>
+                        <strong>Contact Information:</strong><br>
+                        <a href="#" class="contact-call"><i class="fa fa-phone"></i>Phone: + 123 456 7890</a>
+                        <a href="#" class="contact-text"><i class="fa fa-comments"></i>Message: + 123 456 7890</a>
+                        <a href="#" class="contact-mail"><i class="fa fa-envelope"></i>Email: high@leaphstreet.com</a>
+                        <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>Fanpage: leaph.street</a>
+                        <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>Twitter: @leaphstreet</a>
+                    </p>
+                </div>            
+            </div>
+            
+            <div class="decoration"></div>
+        </div>
+        
+        <!-- Page Footer-->
+        <div class="footer">
+            <p class="center-text">Copyright 2022. Imurj LLC<br>
+                All Right Reserved.</p>
+            <div class="footer-socials half-bottom">
+                <a href="#" class="footer-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="footer-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="footer-google"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
+                <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div>  
+        
+    </div>
+    
+    <div class="share-bottom">
+        <h3>Share Page</h3>
+        <div class="share-socials-bottom">
+            <a href="">
+                <i class="fa fa-facebook facebook-color"></i>
+                Facebook
+            </a>
+            <a href="">
+                <i class="fa fa-twitter twitter-color"></i>
+                Twitter
+            </a>
+            <a href="">
+                <i class="fa fa-google-plus google-color"></i>
+                Google
+            </a>
+
+            <a href="">
+                <i class="fa fa-pinterest-p pinterest-color"></i>
+                Pinterest
+            </a>
+            <a href="sms:">
+                <i class="fa fa-comment-o sms-color"></i>
+                Text
+            </a>
+            <a href="">
+                <i class="fa fa-envelope-o mail-color"></i>
+                Email
+            </a>
+        </div>
+        <a href="#" class="close-share-bottom">Close</a>
+    </div>
+    
+</div>
+
+</body>
+
